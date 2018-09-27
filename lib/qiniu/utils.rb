@@ -31,10 +31,10 @@ module Qiniu
       end
 
       def debug(msg)
-          if Config.settings[:enable_debug]
-            Logger.new("#{ENV['HOME']}/qiniu/logfile.log").debug(msg)
-            # Log.logger.debug(msg)
-          end
+        if Config.settings[:enable_debug]
+          Logger.new("#{ENV['HOME']}/qiniu/logfile.log").debug(msg)
+          # Log.logger.debug(msg)
+        end
       end
 
       ### 已过时，仅作为兼容接口保留

@@ -49,6 +49,7 @@ module Qiniu
         PARAMS = {
           # 字符串类型参数
           :scope                  => "scope"               ,
+          :is_prefixal_scope      => "isPrefixalScope"     ,
           :save_key               => "saveKey"             ,
           :end_user               => "endUser"             ,
           :return_url             => "returnUrl"           ,
@@ -66,11 +67,15 @@ module Qiniu
           :insert_only            => "insertOnly"          ,
           :fsize_limit            => "fsizeLimit"          ,
           :callback_fetch_key     => "callbackFetchKey"    ,
+          :fsize_min              => "fsizeMin"            ,
+          :fsize_limit            => "fsizeLimit"          ,
           :detect_mime            => "detectMime"          ,
           :mime_limit             => "mimeLimit"           ,
           :uphosts                => "uphosts"             ,
           :global                 => "global"              ,
           :delete_after_days      => "deleteAfterDays"
+          :delete_after_days      => "deleteAfterDays"     ,
+          :file_type              => "fileType"
         } # PARAMS
 
         public
